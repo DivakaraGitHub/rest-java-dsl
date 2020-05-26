@@ -16,7 +16,7 @@
 
 package io.fabric8.tests.integration;
 
-import io.fabric8.kubernetes.client.KubernetesClient;
+/*import io.fabric8.kubernetes.client.KubernetesClient;
 
 import org.jboss.arquillian.container.test.api.RunAsClient;
 import org.jboss.arquillian.junit.Arquillian;
@@ -27,14 +27,13 @@ import org.junit.runner.RunWith;
 import static io.fabric8.kubernetes.assertions.Assertions.assertThat;
 
 @RunWith(Arquillian.class)
-@RunAsClient
+@RunAsClient*/
 public class KubernetesIntegrationKT {
 
-    @ArquillianResource
-    KubernetesClient client;
-
-    @Test
-    public void testAppProvisionsRunningPods() throws Exception {
-        assertThat(client).deployments().pods().isPodReadyForPeriod();
-    }
+	/*
+	 * @ArquillianResource KubernetesClient client;
+	 * 
+	 * @Test public void testAppProvisionsRunningPods() throws Exception {
+	 * assertThat(client).deployments().pods().isPodReadyForPeriod(); }
+	 */
 }
