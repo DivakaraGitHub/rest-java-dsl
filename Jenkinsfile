@@ -8,8 +8,8 @@ pipeline {
 		APP_TEMPLATE_PARAMETERS = './src/main/resources/application.properties'
 		TEMPLATE_YAML = './configuration/template.yaml'
         GIT_BRANCH="master"
-        DEV_PROJECT = "fuse-on-ocp-164f"
-		JOB_NAME = "Jenkins-Openshift-CICD";
+        DEV_PROJECT = "fuse-on-ocp-802d"
+		JOB_NAME = "Jenkins-Deployment-Automation";
     }
 	tools {
         maven 'M3'
