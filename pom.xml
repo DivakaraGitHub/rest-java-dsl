@@ -30,31 +30,16 @@
     </properties>
 
     <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>io.fabric8</groupId>
-                <artifactId>fabric8-project-bom-camel-spring-boot</artifactId>
-                <version>${fabric8.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-dependencies</artifactId>
-                <version>${spring-boot.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.camel</groupId>
-                <artifactId>camel-spring-boot-dependencies</artifactId>
-                <version>${camel.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
-
+    <dependencies>
+      <dependency>
+        <groupId>org.jboss.redhat-fuse</groupId>
+        <artifactId>fuse-springboot-bom</artifactId>
+        <version>7.3.1.fuse-731003-redhat-00003</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
     <dependencies>
         <dependency>
             <groupId>org.apache.camel</groupId>
@@ -98,6 +83,16 @@
        		<groupId>org.apache.camel</groupId>
         	<artifactId>camel-swagger-java-starter</artifactId>
     	</dependency>
+    	  <dependency>
+       		<groupId>org.webjars</groupId>
+       		<artifactId>swagger-ui</artifactId>
+        <version>3.13.0</version>
+     	</dependency>
+     	<dependency>
+       	<groupId>org.webjars</groupId>
+       	<artifactId>webjars-locator</artifactId>
+       	<version>0.33</version>
+      </dependency>
         <!-- Test -->
         <dependency>
             <groupId>junit</groupId>
@@ -178,7 +173,7 @@
                 <property>
                     <name>openshift</name>
                 </property>
-                <activeByDefault>true</activeByDefault>
+                <activeByDefault>false</activeByDefault>
             </activation>
 
             <properties>
