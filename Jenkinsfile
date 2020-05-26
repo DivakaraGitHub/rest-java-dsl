@@ -4,11 +4,11 @@ pipeline {
         }
     environment {
         APPLICATION_NAME = 'jenkins-deployment-automation'
-        GIT_REPO="https://github.com/DivakaraGitHub/jenkins-deployment-automation.git"
+        GIT_REPO="https://github.com/DivakaraGitHub/rest-java-dsl.git"
 		APP_TEMPLATE_PARAMETERS = './src/main/resources/application.properties'
 		TEMPLATE_YAML = './configuration/template.yaml'
         GIT_BRANCH="master"
-        DEV_PROJECT = "fuse-on-ocp-6c5d"
+        DEV_PROJECT = "fuse-on-ocp-164f"
 		JOB_NAME = "Jenkins-Openshift-CICD";
     }
 	tools {
